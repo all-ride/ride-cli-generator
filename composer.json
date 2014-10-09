@@ -2,7 +2,8 @@
     "name": "ride/cli-generator",
     "description": "Various code generators for your modules.",
     "require": {
-        "zendframework/zend-code": "~2.0"
+        "zendframework/zend-code": "~2.0",
+        "ride/lib-cli-extension": "dev-master"
     },
     "license": "MIT",
     "authors": [
