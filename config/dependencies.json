@@ -1,0 +1,19 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "ride\\library\\cli\\command\\Command",
+            "class": "ride\\cli\\command\\generator\\GenerateControllerCommand",
+            "id": "generate.command.controller"
+        },
+        {
+            "interfaces": "ride\\library\\cli\\command\\Command",
+            "class": "ride\\cli\\command\\generator\\GenerateModuleCommand",
+            "id": "generate.command.module"
+        },
+        {
+            "interfaces": "ride\\library\\cli\\command\\Command",
+            "class": "ride\\cli\\command\\generator\\GenerateFormCommand",
+            "id": "generate.command.form"
+        }
+    ]
+}

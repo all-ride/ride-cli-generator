@@ -1,0 +1,15 @@
+{
+    "name": "ride/cli-generator",
+    "description": "Various code generators for your modules.",
+    "require": {
+        "zendframework/zend-code": "~2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ignace Knops",
+            "email": "ignace@statik.be"
+        }
+    ],
+    "minimum-stability": "stable"
+}
