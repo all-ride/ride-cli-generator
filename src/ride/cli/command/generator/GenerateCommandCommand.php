@@ -7,7 +7,7 @@ use ride\library\system\file\File;
 use Zend\Code\Generator\ClassGenerator;
 use Zend\Code\Generator\MethodGenerator;
 
-class GenerateServiceCommand extends AbstractClassGeneratorCommand
+class GenerateCommandCommand extends AbstractClassGeneratorCommand
 {
 
     /**
