@@ -2,6 +2,7 @@
 
 namespace ride\cli\command\generator;
 
+use ride\library\config\parser\JsonParser;
 use ride\library\system\file\browser\FileBrowser;
 use ride\library\system\file\File;
 use Zend\Code\Generator\ClassGenerator;
@@ -14,9 +15,15 @@ class GenerateServiceCommand extends AbstractClassGeneratorCommand
      */
     private $fileBrowser;
 
+    /**
+     * @var \ride\library\config\parser\JsonParser
+     */
+    private $jsonParser;
+
     public function __construct(FileBrowser $fileBrowser) {
         parent::__construct('generate service');
         $this->fileBrowser = $fileBrowser;
+        $this->jsonParser = new JsonParser();
     }
 
     public function execute() {
