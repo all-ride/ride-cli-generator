@@ -48,7 +48,7 @@ class GenerateFormCommand extends AbstractClassGeneratorCommand {
     private function defineFormName($namespace, $question = 'Enter form name: ') {
         return $this->askAndValidate($this->output, $question, function ($shortName) use ($namespace) {
             if (!preg_match('/^[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*$/', $shortName)) {
-                throw new \InvalidArgumentException('Controller name is invalid.');
+                throw new \InvalidArgumentException('Form name is invalid.');
             }
 
             if (false !== strpos($shortName, 'Form')) {
